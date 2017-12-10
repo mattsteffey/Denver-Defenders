@@ -13,9 +13,16 @@ function numberGenerated() {
 //This controls player 1
 $(document).keypress(function(a) {
     if(a.keyCode == 97)
+	$(".playerplaceholder").animate({marginTop: "-=3%"}, -200);
+	
+});
+$(document).keypress(function(z) {
+    if(z.keyCode == 122)
 	$(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
 	
 });
+
+
 
 
 
