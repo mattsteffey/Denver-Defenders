@@ -10,7 +10,14 @@ function numberGenerated() {
 }
 
 
-//This places the debris on the right side of the screen
+//This controls player 1
+$(document).keypress(function(a) {
+    if(a.keyCode == 97)
+	$(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
+	
+});
+
+
 
 
 
