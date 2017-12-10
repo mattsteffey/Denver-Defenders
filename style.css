@@ -16,14 +16,66 @@
   animation-timing-function: linear;
 }
 
+.gradientflip {
+  position: absolute;
+  width: 100%;
+  margin-left: 100%;
+  top: 0;
+  left: 0;
+  animation-delay: 30s;
+  animation-name: gradientflip;
+  animation-duration: 60s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.gradientfirst {
+  position: absolute;
+  width: 100%;
+  margin-left: 0%;
+  top: 0;
+  left: 0;
+  animation-name: gradientfirst;
+  animation-duration: 3000s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
 .mountains {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   animation-name: mountains;
-  animation-duration: 20s;
+  animation-duration: 30s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.mountainsflip {
+  position: absolute;
+  width: 100%;
+  margin-left: 100%;
+  top: 0;
+  left: 0;
+  animation-delay: 15s;
+  animation-name: mountainsflip;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.mountainsfirst {
+  position: absolute;
+  width: 100%;
+  margin-left: 0%;
+  top: 0;
+  left: 0;
+  animation-name: mountainsfirst;
+  animation-duration: 1500s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .skyline {
@@ -50,7 +102,29 @@
   animation-iteration-count: infinite;
 }
 
+.skylinefirst {
+  position: absolute;
+  width: 100%;
+  margin-left: 0%;
+  top: 0;
+  left: 0;
+  animation-name: skylinefirst;
+  animation-duration: 500s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 @keyframes skyline {
+    from {margin-left: 100%;}
+    to {margin-left: -100%;}
+}
+
+@keyframes mountains {
+    from {margin-left: 100%;}
+    to {margin-left: -100%;}
+}
+
+@keyframes gradient {
     from {margin-left: 100%;}
     to {margin-left: -100%;}
 }
@@ -59,3 +133,48 @@
     from {margin-left: 100%;}
     to {margin-left: -100%;}
 }
+
+@keyframes mountainsflip {
+    from {margin-left: 100%;}
+    to {margin-left: -100%;}
+}
+
+@keyframes gradientflip {
+    from {margin-left: 100%;}
+    to {margin-left: -100%;}
+}
+
+@keyframes skylinefirst {
+    0% {margin-left: 0%;}
+    1% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+}
+
+@keyframes mountainsfirst {
+    0% {margin-left: 0%;}
+    1% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+}
+
+@keyframes gradientfirst {
+    0% {margin-left: 0%;}
+    1% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
