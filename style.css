@@ -11,9 +11,10 @@
   width: 100%;
   top: 0;
   left: 0;
-  animation-name: gradient;
+  animation-name: core;
   animation-duration: 60s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .gradientflip {
@@ -23,7 +24,7 @@
   top: 0;
   left: 0;
   animation-delay: 30s;
-  animation-name: gradientflip;
+  animation-name: flip;
   animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -35,7 +36,7 @@
   margin-left: 0%;
   top: 0;
   left: 0;
-  animation-name: gradientfirst;
+  animation-name: first;
   animation-duration: 3000s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -47,7 +48,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  animation-name: mountains;
+  animation-name: core;
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -60,7 +61,7 @@
   top: 0;
   left: 0;
   animation-delay: 15s;
-  animation-name: mountainsflip;
+  animation-name: flip;
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -72,7 +73,7 @@
   margin-left: 0%;
   top: 0;
   left: 0;
-  animation-name: mountainsfirst;
+  animation-name: first;
   animation-duration: 1500s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -83,7 +84,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  animation-name: skyline;
+  animation-name: core;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -96,7 +97,7 @@
   top: 0;
   left: 0;
   animation-delay: 5s;
-  animation-name: skylineflip;
+  animation-name: flip;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -108,59 +109,29 @@
   margin-left: 0%;
   top: 0;
   left: 0;
-  animation-name: skylinefirst;
+  animation-name: first;
   animation-duration: 500s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
-@keyframes skyline {
+@keyframes core {
     from {margin-left: 100%;}
     to {margin-left: -100%;}
 }
 
-@keyframes mountains {
+@keyframes flip {
     from {margin-left: 100%;}
     to {margin-left: -100%;}
 }
 
-@keyframes gradient {
-    from {margin-left: 100%;}
-    to {margin-left: -100%;}
-}
-
-@keyframes skylineflip {
-    from {margin-left: 100%;}
-    to {margin-left: -100%;}
-}
-
-@keyframes mountainsflip {
-    from {margin-left: 100%;}
-    to {margin-left: -100%;}
-}
-
-@keyframes gradientflip {
-    from {margin-left: 100%;}
-    to {margin-left: -100%;}
-}
-
-@keyframes skylinefirst {
+@keyframes first {
     0% {margin-left: 0%;}
     1% {margin-left: -100%;}
     100% {margin-left: -100%;}
 }
 
-@keyframes mountainsfirst {
-    0% {margin-left: 0%;}
-    1% {margin-left: -100%;}
-    100% {margin-left: -100%;}
-}
 
-@keyframes gradientfirst {
-    0% {margin-left: 0%;}
-    1% {margin-left: -100%;}
-    100% {margin-left: -100%;}
-}
 
 
 
