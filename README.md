@@ -1,1 +1,5 @@
+![alt text](https://github.com/mattsteffey/Project1/blob/master/README%20images/LandingPage.png)
+![alt text](https://github.com/mattsteffey/Project1/blob/master/README%20images/Instructions.png)
+![alt text](https://github.com/mattsteffey/Project1/blob/master/README%20images/Credits.png)
 ![alt text](https://github.com/mattsteffey/Project1/blob/master/README%20images/CharSelect.png)
+![alt text](https://github.com/mattsteffey/Project1/blob/master/README%20images/Gameplay.png)
