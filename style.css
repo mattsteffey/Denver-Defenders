@@ -136,17 +136,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 10%;
   margin-left: 5%;
 }
 
-.muzzle { 
-  position: relative;
-  top: 20%;
-  left: 11%;
-  z-index: 2;
-}
 
 .playerboard {
   position: absolute;
@@ -156,6 +150,20 @@
   left: 0;
 }
 
+.meteor {
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  animation-name: meteordrop;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes meteordrop {
+    0% {margin-left: 70%; margin-top: 0%;}
+  100% {margin-left: -150%; margin-top: 100%;}
+}
 
 
 
