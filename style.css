@@ -1,3 +1,7 @@
+body {
+  width: 100%
+}
+
 .container {
   position: relative;
   z-index: 0;
@@ -151,7 +155,7 @@
 }
 
 .meteor {
-  width: 10%;
+  width: 7.5%;
   position: absolute;
   z-index: 1;
   animation-name: meteordrop;
@@ -161,8 +165,8 @@
 }
 
 @keyframes meteordrop {
-    0% {margin-left: 70%; margin-top: 0%; transform: rotate(0deg);}
-  100% {margin-left: -150%; margin-top: 100%; transform:rotate(-1000deg);}
+    0% {margin-left: 0%; margin-top: 0%; transform: rotate(0deg);}
+  100% {margin-left: -180%; margin-top: 100%; transform:rotate(-1000deg);}
 }
 
 
