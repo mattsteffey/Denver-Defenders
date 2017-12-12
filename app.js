@@ -1,6 +1,7 @@
 
 
 //Meteor Generator
+
 var meteorSpawn = setInterval(meteorPlacement, 1000);
 var meteorDrop = setInterval(generator, 1000);
 	
@@ -9,11 +10,18 @@ function meteorPlacement() {
 	console.log(meteorNumber);
 }
 
-function meteorMaker() {
-	
+function generator() {
+    var meteor = document.createElement("IMG");
+    meteor.setAttribute("src", "./gameimages/meteor.png");
+    meteor.setAttribute("class", "meteor");
+    document.body.appendChild(meteor);
 }
 
+
+
+
 //Player Controls
+
 $(document).keypress(function(a) {
     if(a.keyCode == 97)
 	$(".playerplaceholder").animate({marginTop: "-=3%"}, -200);
@@ -27,23 +35,7 @@ $(document).keypress(function(z) {
 
 
 
-var newMeteor = new Image();
-newMeteor.src = './gameimages/meteor.png';
 
-document.body.appendChild(newMeteor);
-
-
-//var meteor = document.createElement("img");
-
-//document.getElementById("myImg").src = "hackanm.gif";
-
-
-function generator() {
-    var meteor = document.createElement("IMG");
-    meteor.setAttribute("src", "./gameimages/meteor.png");
-    meteor.setAttribute("class", "meteor");
-    document.body.appendChild(meteor);
-}
 
 
 

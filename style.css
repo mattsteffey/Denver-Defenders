@@ -161,11 +161,9 @@
 }
 
 @keyframes meteordrop {
-    0% {margin-left: 70%; margin-top: 0%;}
-  100% {margin-left: -150%; margin-top: 100%;}
+    0% {margin-left: 70%; margin-top: 0%; transform: rotate(0deg);}
+  100% {margin-left: -150%; margin-top: 100%; transform:rotate(-1000deg);}
 }
-
-
 
 
 
