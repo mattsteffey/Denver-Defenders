@@ -13,7 +13,7 @@ var b = setInterval(generator, 700);
 
 
 
-// Assigns a number 1-100 to the variable meteorCoordinate !!ONCE PER SECOND!!	
+
 
 
 // Makes a meteor and drops it into the game !!ONCE PER SECOND!!
@@ -39,7 +39,7 @@ $(document).keypress(function(a) {
   $(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
 });
 
-$(document).keypress(function(space) {
+$(document).keyup(function(space) {
     if(space.keyCode == 32)
 	$(click());
 });
