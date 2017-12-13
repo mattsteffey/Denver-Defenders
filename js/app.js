@@ -28,7 +28,6 @@ function generator() {
 
 }
 
-
 //Player Controls
 
 $(document).keypress(function(a) {
@@ -39,8 +38,17 @@ $(document).keypress(function(a) {
 $(document).keypress(function(z) {
     if(z.keyCode == 122)
 	$(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
-	
 });
+
+
+function click() {
+   var ammo = document.createElement("IMG");        
+    ammo.setAttribute("src", "./gameimages/ammo.png");    
+    ammo.setAttribute("class", "ammo");
+    ammo.style.paddingLeft = "13%";         
+    document.body.appendChild(ammo);             
+}
+
 
 
 

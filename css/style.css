@@ -3,9 +3,11 @@ body {
   background-color: black;
 }
 
+
+
 .container {
   position: relative;
-  z-index: 0;
+  z-index: 2;
   top: 0;
   left: 0;
   background-size: cover;
@@ -142,7 +144,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   width: 10%;
   margin-left: 5%;
 }
@@ -159,18 +161,32 @@ body {
 .meteor {
   width: 7.5%;
   position: absolute;
-  z-index: 3;
+  z-index: 8;
   animation-name: meteor;
   animation-duration: 1000s;
   animation-timing-function: linear;
 
 }
 
+.ammo {
+  width: 3%;
+  position: absolute;
+  z-index: 2;
+  animation-name: ammo;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+}
+
+@keyframes ammo {
+  0% {margin-left: 0%;}
+  1% {margin-left: 120%;}
+  100% {margin-left: 120%;}
+}
+
 @keyframes meteor {
   0% {margin-top: -10%; margin-left: 0%;}
   1% {margin-top: 100%; margin-left: -60%;}
   100% {margin-top: 120%; margin-left: -100%;}
-
 }
 
 
