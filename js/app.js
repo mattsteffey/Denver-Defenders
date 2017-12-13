@@ -33,12 +33,18 @@ function generator() {
 $(document).keypress(function(a) {
     if(a.keyCode == 97)
 	$(".playerplaceholder").animate({marginTop: "-=3%"}, -200);
-	
 });
-$(document).keypress(function(z) {
+ $(document).keypress(function(z) {
     if(z.keyCode == 122)
-	$(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
+  $(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
 });
+
+$(document).keypress(function(space) {
+    if(space.keyCode == 32)
+	$(click());
+});
+
+
 
 
 function click() {
@@ -48,6 +54,7 @@ function click() {
     ammo.style.paddingLeft = "13%";         
     document.body.appendChild(ammo);             
 }
+
 
 
 
