@@ -51,7 +51,7 @@ function click() {
    var ammo = document.createElement("IMG");        
     ammo.setAttribute("src", "./gameimages/ammo.png");    
     ammo.setAttribute("class", "ammo");
-    ammo.style.paddingLeft = "13%";         
+    ammo.style.paddingLeft = "13%";   
     document.body.appendChild(ammo);             
 }
 
