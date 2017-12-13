@@ -6,9 +6,9 @@ body {
 .container {
     display: block;
     margin: auto;
-    width: 80%;
+    width: auto;
     border: solid white 8px;
-    background-image: url(./gameimages/backgrounds/mountains.png);
+    background-image: url(../gameimages/backgrounds/mountains.png);
 
 }
 
