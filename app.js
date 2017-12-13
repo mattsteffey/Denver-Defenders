@@ -2,8 +2,14 @@
 
 //Meteor Generator
 
+$('html, body').css({
+   overflow: 'hidden',       //disables scrolling
+   height: '100%',
+   width: '100%',
+});
 
-var b = setInterval(generator, 1000);
+
+var b = setInterval(generator, 700);
 
 
 
@@ -13,11 +19,11 @@ var b = setInterval(generator, 1000);
 // Makes a meteor and drops it into the game !!ONCE PER SECOND!!
 // image class = meteor
 function generator() {
-	var meteorCoordinate = Math.floor(Math.random() * 100) + 1; // number from 1-100
+	var meteorCoordinate = Math.floor(Math.random() * 100) + 30; // number from 30-100
     var meteor = document.createElement("IMG");					// creates image
     meteor.setAttribute("src", "./gameimages/meteor.png");		// makes image a meteor
     meteor.setAttribute("class", "meteor");						// sets class
-    meteor.style.paddingLeft = meteorCoordinate +"%";     		// padding left is equal to 1-100
+    meteor.style.paddingLeft = meteorCoordinate +"%";     		// padding left is equal to 30-100
     document.body.appendChild(meteor);							// puts meteor into the game board
 
 }
