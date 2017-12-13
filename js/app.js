@@ -17,14 +17,15 @@ var a = setInterval(generator, 800);
 // Makes a meteor and drops it into the game !!ONCE PER SECOND!!
 // image class = meteor
 function generator() {
-	var meteorCoordinate = Math.floor(Math.random() * 100) + 5 ; // number from 1-100
+	var meteorCoordinate = Math.floor(Math.random() * 100) + 10 ; // number from 1-100
     var meteor = document.createElement("IMG");					        // creates image
     meteor.setAttribute("src", "./gameimages/meteor.gif");		  // makes image a meteor
     meteor.setAttribute("class", "meteor");
     meteor.setAttribute("id", Math.random()); 
     meteor.setAttribute("onclick", "this.src='./gameimages/sparkle.gif'");
-      				           		// sets class
-    meteor.style.marginLeft = meteorCoordinate +"%";     	   	// padding left is equal to 30-100
+    meteor.style.marginLeft = meteorCoordinate +"%";
+    meteor.style.padding = 5 +"%";  
+      	   	// padding left is equal to 30-100
     document.body.appendChild(meteor);							             // puts meteor into the game board
 
 }
