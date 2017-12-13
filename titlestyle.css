@@ -1,0 +1,41 @@
+body { 
+	background-color: black;
+
+ }
+
+.container {
+    display: block;
+    margin: auto;
+    width: 80%;
+    border: solid white 8px;
+    background-image: url(./gameimages/backgrounds/mountains.png);
+
+}
+
+.image {
+	width: 100%;
+	margin-bottom: -15%;
+
+
+ }
+
+.buttonDiv:hover { 
+    background-color: white;
+    color: black;
+}
+
+.buttonDiv {
+    background-color: black;
+	position: relative;
+	font-family: 'Press Start 2P', cursive;
+	color: white;
+	display: block;
+    margin: 0 auto;
+    width: 50%;
+    border: solid 5px white;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+

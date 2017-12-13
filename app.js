@@ -19,7 +19,7 @@ var b = setInterval(generator, 700);
 // Makes a meteor and drops it into the game !!ONCE PER SECOND!!
 // image class = meteor
 function generator() {
-	var meteorCoordinate = Math.floor(Math.random() * 100) + 30; // number from 30-100
+	var meteorCoordinate = Math.floor(Math.random() * 100) + 30 ; // number from 30-100
     var meteor = document.createElement("IMG");					// creates image
     meteor.setAttribute("src", "./gameimages/meteor.png");		// makes image a meteor
     meteor.setAttribute("class", "meteor");						// sets class
