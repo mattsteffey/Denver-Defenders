@@ -1,51 +1,43 @@
 
 
-//Meteor Generator
-
-//disables scrolling
-$('html, body').css({  
-   overflow: 'hidden', 
-   height: '100%',     
-   width: '100%',     
-});
+// GET HELP WITH THIS PAAAAARTTTTTTTTTT //
+setInterval(makeFall, 100);
+function makeFall() {
+    document.getElementsByClassName("meteor").style.marginTop += 1 +"%";
+}
 
 
-var a = setInterval(generator, 600);
-var b = setInterval(generator, 900);
-
-
-
-// Makes a meteor and drops it into the game !!ONCE PER SECOND!!
-// image class = meteor
-function generator() {
-	var meteorCoordinate = Math.floor(Math.random() * 80) + 10 ; // number from 1-100
-    var meteor = document.createElement("IMG");					        // creates image
-    meteor.setAttribute("src", "./gameimages/meteor.gif");		  // makes image a meteor
-    meteor.setAttribute("class", "meteor");
-    meteor.setAttribute("id", Math.random()); 
-    meteor.setAttribute("onmouseleave", "this.src='./gameimages/sparkle.gif'");
-    meteor.style.marginLeft = meteorCoordinate +"%";
-    meteor.style.padding = 3 +"%";  
-    document.body.appendChild(meteor);							             // puts meteor into the game board
-
+setInterval(makeMeteor, 1000);
+function makeMeteor() {
+  var meteor = document.createElement("img");              //Makes an IMG Tag
+  meteor.setAttribute("src", "./gameimages/meteor.gif");   //Makes that IMG a Meteor    
+  meteor.setAttribute("class", "meteor");                  //Classes the Meteor
+  var x = Math.floor(Math.random() * 100) + 1 ;            //1-100 for X Axis
+  meteor.style.marginLeft = x +"%";                        //Applies a YX Axis 1-100
+  meteor.style.marginTop = x +"0";  
+  document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
 
 
 
-//Player Controls
+
+
+
+
+
+
+
+
+// //Player Controls
 $(document).keypress(function(a) {
     if(a.keyCode == 97)
 	$(".playerplaceholder").animate({marginTop: "-=3%"}, -200);
-});
- $(document).keypress(function(z) {
-    if(z.keyCode == 122)
+    if(a.keyCode == 122)
   $(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
 });
+ 
 
-$(document).keyup(function(space) {
-    if(space.keyCode == 32)
-	$(click());
-});
+
 
 
 
@@ -69,6 +61,61 @@ $(document).keyup(function(space) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // var meteor = document.createElement("IMG");              
+    // meteor.setAttribute("src", "./gameimages/meteor.gif");     
+    // meteor.setAttribute("class", "meteor");
+    // meteor.setAttribute("onmouseleave", "this.src='./gameimages/sparkle.gif'");
+    // meteor.style.marginLeft = meteorYAxis +"%";
+  //  document.body.appendChild(meteor);
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//disables scrolling
+// $('html, body').css({  
+//    overflow: 'hidden', 
+//    height: '100%',     
+//    width: '100%',     
+// });
+
+    // meteor.setAttribute("onmouseleave", "this.src='./gameimages/sparkle.gif'");
 
 
 
