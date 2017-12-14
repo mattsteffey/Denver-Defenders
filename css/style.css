@@ -176,7 +176,10 @@ body{
 
 }
 
-
+#player {
+color: red;
+margin-top: 10%;
+}
 
 */
 /*@keyframes meteor {

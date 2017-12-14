@@ -11,20 +11,21 @@ function makeFall() {
 
 
 function shoot() {
-    var ammo = document.createElement("img");              //Makes an IMG Tag
-    ammo.setAttribute("src", "./gameimages/ammo.png");     //Makes that IMG ammo    
-    ammo.setAttribute("class", "ammo");                    //Classes the ammo
+    var ammo = document.createElement("img");                     //Makes an IMG Tag
+    ammo.setAttribute("src", "./gameimages/ammo.png");            //Makes that IMG ammo    
+    ammo.setAttribute("class", "ammo"); 
+    ammo.setAttribute("style", "margin-top: 0%"); 
+ 
+    var x = ammo.style.marginTop;
 
-    var x = document.querySelectorAll("#player");
-    console.log(x);
-
-
-
+console.log(x);
 
 }
 
 
+
 window.addEventListener("click", shoot);
+
 
 
 
