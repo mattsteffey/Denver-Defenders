@@ -1,10 +1,17 @@
 
 
 // GET HELP WITH THIS PAAAAARTTTTTTTTTT //
-setInterval(makeFall, 100);
+setInterval(makeFall, 1000);
 function makeFall() {
-    document.getElementsByClassName("meteor").style.marginTop += 1 +"%";
+  var x = document.querySelectorAll(".meteor");
+
+  var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.marginTop = parseInt(x[i].style.marginTop) + 10 + "%";
 }
+console.log(x);
+}
+
 
 
 setInterval(makeMeteor, 1000);
@@ -14,16 +21,9 @@ function makeMeteor() {
   meteor.setAttribute("class", "meteor");                  //Classes the Meteor
   var x = Math.floor(Math.random() * 100) + 1 ;            //1-100 for X Axis
   meteor.style.marginLeft = x +"%";                        //Applies a YX Axis 1-100
-  meteor.style.marginTop = x +"0";  
+  meteor.style.marginTop = 0 +"%";  
   document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
-
-
-
-
-
-
-
 
 
 
