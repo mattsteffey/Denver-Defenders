@@ -1,21 +1,10 @@
-html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
-}
-body{
-    height:100%; /* force the BODY element to match the height of the HTML element */
-    background-color: black;
-}
-
-
 .container {
-  position: relative;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  background-size: cover;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
- 
+
 .gradient {
   position: absolute;
   width: 100%;
@@ -143,23 +132,6 @@ body{
 
 
 
-.playerplaceholder { 
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 4;
-  width: 10%;
-  margin-left: 5%;
-}
-
-
-.playerboard {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
 
 .meteor {
   width: 10%;
@@ -176,17 +148,7 @@ body{
 
 }
 
-#player {
-color: red;
-margin-top: 10%;
-}
 
-*/
-/*@keyframes meteor {
-  0% {margin-top: -10%;}
-  1% {margin-top: 100%;}
-  100% {margin-top: 120%;}
-}*/
 
 
 /*EVERYTHING BELOW THIS LINE IS FOR THE TITLE PAGE(S)*/

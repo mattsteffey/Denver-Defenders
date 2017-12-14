@@ -10,22 +10,21 @@ function makeFall() {
 }
 
 
-function shoot() {
-    var ammo = document.createElement("img");                     //Makes an IMG Tag
-    ammo.setAttribute("src", "./gameimages/ammo.png");            //Makes that IMG ammo    
-    ammo.setAttribute("class", "ammo"); 
-    ammo.setAttribute("style", "margin-top: 0%"); 
- 
-    var x = ammo.style.marginTop;
 
-console.log(x);
+function createPlayer() {
+  var player = document.createElement("img"); 
+  player.setAttribute("src", "./gameimages/plane.gif");
+  player.setAttribute("id", "player");
+  player.style.position = "absolute";
+  player.style.width = 8+"%";
 
+  x = 30;
+  player.style.marginTop = x +"%"; 
+
+  document.body.appendChild(player);          
 }
 
-
-
-window.addEventListener("click", shoot);
-
+// window.addEventListener("click", shoot);
 
 
 
@@ -39,7 +38,7 @@ function makeMeteor() {
   meteor.setAttribute("class", "meteor");                  //Classes the Meteor
   var x = Math.floor(Math.random() * 100) + 1 ;            //1-100 for x-axis
   meteor.style.marginLeft = x +"%";                        //Applies a x-axis 1-100
-  meteor.style.marginTop = 0 +"%";  
+  meteor.style.marginTop = 0 +"%"; 
   document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
 
