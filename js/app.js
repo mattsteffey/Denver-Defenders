@@ -1,26 +1,24 @@
 
 
-// GET HELP WITH THIS PAAAAARTTTTTTTTTT //
+//  This moves the meteors along the y-axis incrementally 
 setInterval(makeFall, 1000);
 function makeFall() {
   var x = document.querySelectorAll(".meteor");
-
   var i;
     for (i = 0; i < x.length; i++) {
-      x[i].style.marginTop = parseInt(x[i].style.marginTop) + 10 + "%";
+      x[i].style.marginTop = parseInt(x[i].style.marginTop) + 5 + "%";
 }
-console.log(x);
 }
 
 
-
+// This creates the meteors, and places them on a randomly along the x-axis
 setInterval(makeMeteor, 1000);
 function makeMeteor() {
   var meteor = document.createElement("img");              //Makes an IMG Tag
   meteor.setAttribute("src", "./gameimages/meteor.gif");   //Makes that IMG a Meteor    
   meteor.setAttribute("class", "meteor");                  //Classes the Meteor
-  var x = Math.floor(Math.random() * 100) + 1 ;            //1-100 for X Axis
-  meteor.style.marginLeft = x +"%";                        //Applies a YX Axis 1-100
+  var x = Math.floor(Math.random() * 100) + 1 ;            //1-100 for x-axis
+  meteor.style.marginLeft = x +"%";                        //Applies a x-axis 1-100
   meteor.style.marginTop = 0 +"%";  
   document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
@@ -31,9 +29,9 @@ function makeMeteor() {
 // //Player Controls
 $(document).keypress(function(a) {
     if(a.keyCode == 97)
-	$(".playerplaceholder").animate({marginTop: "-=3%"}, -200);
+	$(".playerplaceholder").animate({marginTop: "-=5%"}, -200);
     if(a.keyCode == 122)
-  $(".playerplaceholder").animate({marginTop: "+=3%"}, -200);
+  $(".playerplaceholder").animate({marginTop: "+=5%"}, -200);
 });
  
 
@@ -108,14 +106,14 @@ $(document).keypress(function(a) {
 
 
 
-//disables scrolling
-// $('html, body').css({  
-//    overflow: 'hidden', 
-//    height: '100%',     
-//    width: '100%',     
-// });
 
-    // meteor.setAttribute("onmouseleave", "this.src='./gameimages/sparkle.gif'");
+$('html, body').css({  
+   overflow: 'hidden', 
+   height: '100%',     
+   width: '100%',     
+});
+
+
 
 
 
