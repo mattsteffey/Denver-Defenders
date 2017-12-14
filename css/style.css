@@ -166,10 +166,17 @@ body{
   position: absolute;
   z-index: 8;
   margin-top: 0%;
+}
 
-
+.ammo {
+  width: 5%;
+  position: absolute;
+  z-index: 9;
+  margin-top: 0%;
 
 }
+
+
 
 */
 /*@keyframes meteor {

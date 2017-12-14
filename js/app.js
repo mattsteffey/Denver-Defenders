@@ -6,9 +6,28 @@ function makeFall() {
   var x = document.querySelectorAll(".meteor");
   var i;
     for (i = 0; i < x.length; i++) {
-      x[i].style.marginTop = parseInt(x[i].style.marginTop) + 5 + "%";
+      x[i].style.marginTop = parseInt(x[i].style.marginTop) + 5 + "%"; }
 }
+
+
+function shoot() {
+    var ammo = document.createElement("img");              //Makes an IMG Tag
+    ammo.setAttribute("src", "./gameimages/ammo.png");     //Makes that IMG ammo    
+    ammo.setAttribute("class", "ammo");                    //Classes the ammo
+
+    var x = document.querySelectorAll("#player");
+    console.log(x);
+
+
+
+
 }
+
+
+window.addEventListener("click", shoot);
+
+
+
 
 
 // This creates the meteors, and places them on a randomly along the x-axis
