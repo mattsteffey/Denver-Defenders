@@ -1,9 +1,9 @@
-
+window.onload = createPlayer;
 
 //  This moves the meteors along the y-axis incrementally 
 setInterval(makeFall, 600);
 function makeFall() {
-  var x = document.querySelectorAll(".meteor");
+  var x = document.querySelectorAll(".meteor"); 
   var i;
     for (i = 0; i < x.length; i++) {
       x[i].style.marginTop = parseInt(x[i].style.marginTop) + 5 + "%"; }
@@ -16,7 +16,6 @@ function ammoMove() {
     for (i = 0; i < x.length; i++) {
       x[i].style.marginLeft = parseInt(x[i].style.marginLeft) + 1 + "%"; }
 }
-
 
 
 // This creates the meteors, and places them on a randomly along the x-axis
@@ -33,22 +32,6 @@ function makeMeteor() {
 
 // This Creates AMMO
 
-window.addEventListener("click", makeAmmo);
-function makeAmmo() {
-  var ammo = document.createElement("img");              //Makes an IMG Tag
-  ammo.setAttribute("src", "./gameimages/ammo.png");   //Makes that IMG a Meteor    
-  ammo.setAttribute("class", "ammo");                  //Classes the Meteor                                     //1-100 for x-axis
-  ammo.style.marginLeft = 13 + "%";                        //Applies a x-axis 1-100  
-  document.body.appendChild(ammo);                       //Places the Meteor into the game
-}
-
-
-
-
-
-
-
-
 
 
 function createPlayer() {
@@ -56,23 +39,47 @@ function createPlayer() {
   player.setAttribute("src", "./gameimages/plane.gif");
   player.setAttribute("id", "player");
   player.style.position = "absolute";
-  player.style.width = 8+"%";
-  player.style.marginTop = 20 +"%"; 
+  player.style.width = 10+"%";
+  player.style.marginTop = 0 +"%"; 
   document.body.appendChild(player);          
 }
 
 
 
 
-// //Player Controls
+
 $(document).keypress(function(a) {
+  var playerLoc = 0;
     if(a.keyCode == 97)
 	$("#player").animate({marginTop: "-=5%"}, -200);
     if(a.keyCode == 122)
   $("#player").animate({marginTop: "+=5%"}, -200);
+   
 });
- 
 
+
+function ammoAxis() {
+  x = document.querySelectorAll("#player"); 
+    console.log(player);
+}
+
+window.addEventListener("click", makeAmmo);               // Click to Shoot
+function makeAmmo() {
+  var ammo = document.createElement("img");               //Makes an IMG Tag      
+  ammo.setAttribute("src", "./gameimages/ammo.png");      //Makes IMG Ammo
+  ammo.setAttribute("class", "ammo");
+  var y = player.style.marginTop; 
+  ammo.style.marginTop = y;                   //Class = Ammo
+  ammo.style.marginLeft = 10 + "%";                       //Positions in front of plane 
+  document.body.appendChild(ammo);
+
+}
+
+
+function testAxis() {
+
+  
+}
 
 
 
