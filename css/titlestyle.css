@@ -3,6 +3,10 @@ body {
 
  }
 
+ a {
+    text-decoration: none;
+ }
+
 .container {
     display: block;
     margin: auto;
