@@ -6,7 +6,7 @@ body {
 .container {
     display: block;
     margin: auto;
-    width: auto;
+    width: 70%;
     border: solid white 8px;
     background-image: url(../gameimages/backgrounds/mountains.png);
 
@@ -37,4 +37,9 @@ body {
     padding: 2%;
     margin-bottom: 2%;
 }
+
+#play {
+
+}
+
 

@@ -1,0 +1,86 @@
+body { 
+	background-color: black;
+	margin: 0;
+	padding: 0;
+
+ }
+ 
+h1{
+	font-family: 'Press Start 2P', cursive;
+	color: white;
+	font-size: 400%;
+	text-align: center;
+
+}
+
+h2{
+	font-family: 'Press Start 2P', cursive;
+	color: white;
+	font-size: 200%;
+	text-align: center;
+	
+}
+
+.container {
+ 	position: relative;
+    margin: auto;
+    width: 70%;
+    border: solid white 8px;
+}
+
+.char {
+	position: relative;
+	border: solid white 4px;
+	width: 15%;
+	margin: auto;
+}
+ 
+
+#jones{
+	margin-left:18%;
+	border: solid white 6px;
+}
+#beth{
+	border: solid white 6px;
+} 
+#bud {
+	border: solid white 6px;
+}	
+#kid {
+	border: solid white 6px;
+}
+#keg {
+	margin-left: 26%;
+	border: solid white 6px;
+}
+#scotty{
+	border: solid white 6px;
+}
+#sir {
+	border: solid white 6px;
+}
+
+#jones:hover {
+	margin-left:18%;
+	border: solid #853cf2 6px;
+}
+#beth:hover {
+	border: solid #f268ff 6px;
+} 
+#bud:hover  {
+	border: solid #68ff77 6px;
+}	
+#kid:hover  {
+	border: solid #ff0000 6px;
+}
+#keg:hover  {
+	margin-left: 26%;
+	border: solid #a0a0a0 6px;
+}
+#scotty:hover {
+	border: solid #ffb200 6px;
+}
+#sir:hover  {
+	border: solid #fff200 6px;
+}
+

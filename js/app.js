@@ -78,84 +78,12 @@ function makeAmmo() {
 }
 
 
-function testAxis() {
-
-  
-}
-
-
-
-
-    //If you want to remove all images
-    //$(this).parent().find('img').remove();
-
-
-
-
-//    var ammo = document.createElement("IMG");        
-//    ammo.setAttribute("src", "./gameimages/ammo.png");    
-//    ammo.setAttribute("class", "ammo");
-//     ammo.style.paddingLeft = "13%";   
-//    document.body.appendChild(ammo);             
-// // }
-
-
-// window.addEventListener("click", shoot);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 $('html, body').css({  
    overflow: 'hidden', 
    height: '100%',     
    width: '100%',     
 });
-
-
 
 
 
