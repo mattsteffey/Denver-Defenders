@@ -1,12 +1,12 @@
 window.onload = createPlayer;
 
 //  This moves the meteors along the y-axis incrementally 
-setInterval(makeFall, 600);
+setInterval(makeFall, 75);
 function makeFall() {
   var x = document.querySelectorAll(".meteor"); 
   var i;
     for (i = 0; i < x.length; i++) {
-      x[i].style.marginTop = parseInt(x[i].style.marginTop) + 5 + "%"; }
+      x[i].style.marginTop = parseInt(x[i].style.marginTop) + 1 + "%"; }
 }
 
 setInterval(ammoMove, 10);
@@ -19,7 +19,9 @@ function ammoMove() {
 
 
 // This creates the meteors, and places them on a randomly along the x-axis
-setInterval(makeMeteor, 600);
+setInterval(makeMeteor, 500);
+setInterval(makeMeteor, 500);
+setInterval(makeMeteor, 500);
 function makeMeteor() {
   var meteor = document.createElement("img");              //Makes an IMG Tag
   meteor.setAttribute("src", "./gameimages/meteor.gif");   //Makes that IMG a Meteor    
