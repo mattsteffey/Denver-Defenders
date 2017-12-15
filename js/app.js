@@ -26,7 +26,7 @@ function makeMeteor() {
   var meteor = document.createElement("img");              //Makes an IMG Tag
   meteor.setAttribute("src", "./gameimages/meteor.gif");   //Makes that IMG a Meteor    
   meteor.setAttribute("class", "meteor");                  //Classes the Meteor
-  var x = Math.floor(Math.random() * 10) * 9 ;            //1-100 for x-axis
+  var x = Math.floor(Math.random() * 10) * 9 + 3 ;            //1-100 for x-axis
   meteor.style.marginLeft = 10 + x +"%";                        //Applies a x-axis 1-100
   meteor.style.marginTop = 0 +"%"; 
   document.body.appendChild(meteor);                       //Places the Meteor into the game
@@ -41,7 +41,7 @@ function createPlayer() {
   player.setAttribute("src", sprite);
   player.setAttribute("id", "player");
   player.style.position = "absolute";
-  player.style.width = 10+"%";
+  player.style.width = 15+"%";
   player.style.marginTop = 0 +"%"; 
   document.body.appendChild(player);          
 }
@@ -84,6 +84,8 @@ $('html, body').css({
    height: '100%',     
    width: '100%',     
 });
+
+
 
 
 
