@@ -1,5 +1,5 @@
 window.onload = createPlayer;
-
+var sprite = localStorage.getItem('charid');
 //  This moves the meteors along the y-axis incrementally 
 setInterval(makeFall, 75);
 function makeFall() {
@@ -38,7 +38,7 @@ function makeMeteor() {
 
 function createPlayer() {
   var player = document.createElement("img"); 
-  player.setAttribute("src", "./gameimages/plane.gif");
+  player.setAttribute("src", sprite);
   player.setAttribute("id", "player");
   player.style.position = "absolute";
   player.style.width = 10+"%";
@@ -84,13 +84,6 @@ $('html, body').css({
    height: '100%',     
    width: '100%',     
 });
-
-
-
-
-
-
-
 
 
 
