@@ -9,8 +9,11 @@
 }
 
 body {
-   background-color:black;
+   background-color: black;
+   cursor:url(crosshair.png), auto;
 }
+
+
 .gradient {
   position: absolute;
   width: 100%;
@@ -140,7 +143,7 @@ body {
 
 
 .meteor {
-  width: 10%;
+  width: 15%;
   position: absolute;
   z-index: 8;
   margin-top: 0%;
@@ -155,10 +158,14 @@ body {
 }
 
 
-
-
-/*EVERYTHING BELOW THIS LINE IS FOR THE TITLE PAGE(S)*/
-
+img {
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
 
 
 
