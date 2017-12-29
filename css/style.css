@@ -13,6 +13,14 @@ body {
    cursor:url(crosshair.png), auto;
 }
 
+.timer {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 100;
+  width: 20%;
+  background-color: black;
+  border: 5px solid white;
+}
 
 .gradient {
   position: absolute;

@@ -1,4 +1,5 @@
 window.onload = createPlayer;
+// window.onload = createTimer;
 var sprite = localStorage.getItem('charid');
 var score = 0;
 //Meteor Movement
@@ -17,9 +18,19 @@ function timerCount() {
   if (timer > 0) {
     timer -= 1;
     console.log(timer);
-
-  }
+   }
 }
+
+//Creates the Timer Box
+function createTimer() {
+  var timerBox = document.createElement("div");  //creates a div
+  timerBox.setAttribute("class", timer);         //sets class to timer
+  document.body.appendChild(timerBox);          //adds div to body      
+}
+
+
+
+
 
 
 
@@ -42,6 +53,8 @@ function makeMeteor() {
   document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
 
+
+//Click function to kill meteors and add to score
 function killMeteor() {
   x = this.getAttribute('id');
   document.getElementById(x).remove();
@@ -49,6 +62,8 @@ function killMeteor() {
 } 
  
 
+
+//Adds player token into the game
 function createPlayer() {
   var player = document.createElement("img"); 
   player.setAttribute("src", sprite);
