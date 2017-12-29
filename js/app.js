@@ -1,6 +1,6 @@
 window.onload = createPlayer;
 var sprite = localStorage.getItem('charid');
-
+var score = 0;
 //Meteor Movement
 setInterval(makeFall, 50);
 function makeFall() {
@@ -10,6 +10,16 @@ function makeFall() {
       x[i].style.marginTop = parseInt(x[i].style.marginTop) + 1 + "%"; }
 }
 
+//timer countdown
+var timer = 10;
+setInterval(timerCount, 1000);
+function timerCount() {
+  if (timer > 0) {
+    timer -= 1;
+    console.log(timer);
+
+  }
+}
 
 
 
@@ -35,15 +45,9 @@ function makeMeteor() {
 function killMeteor() {
   x = this.getAttribute('id');
   document.getElementById(x).remove();
+  score += 10;
 } 
  
-
-
-
-
-  
-
-
 
 function createPlayer() {
   var player = document.createElement("img"); 
