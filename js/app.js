@@ -8,6 +8,7 @@ function makeFall() {
   var i;
     for (i = 0; i < x.length; i++) {
       x[i].style.marginTop = parseInt(x[i].style.marginTop) + 1 + "%"; }
+    
 }
 
 //Ammo Movement
@@ -26,16 +27,19 @@ setInterval(makeMeteor, 500);
 
 function makeMeteor() {
   var meteor = document.createElement("img");              //Makes an IMG Tag
-  meteor.setAttribute("src", "./gameimages/meteor.gif");   //Makes that IMG a Meteor    
+  meteor.setAttribute("src", "./gameimages/meteor.gif");   //Makes that IMG a Meteor 
+  var x = Math.floor(Math.random() * 10) * 7 + 3 ;            //1-100 for x-axis   
   meteor.setAttribute("class", "meteor");                  //Classes the Meteor
-  var x = Math.floor(Math.random() * 10) * 7 + 3 ;            //1-100 for x-axis
+  meteor.setAttribute("id", Math.random);
   meteor.style.marginLeft = 10 + x +"%";                        //Applies a x-axis 1-100
   meteor.style.marginTop = 0 +"%"; 
   document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
 
 
-
+function removeDiv(divId) {
+   $("#"+divId).remove();
+}
 
 
 
@@ -50,24 +54,30 @@ function createPlayer() {
 }
 
 
-
-
-
-
-
-
-function ammoAxis() {
-  x = document.querySelectorAll("#player"); 
-    console.log(player);
-}
-
-
 //Sroll Lock
 $('html, body').css({  
    overflow: 'hidden', 
    height: '100%',     
    width: '100%',     
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -86,7 +96,11 @@ $('html, body').css({
 //   ammo.style.marginTop = y;                                //Class = Ammo
 //   ammo.style.marginLeft = 10 + "%";                       //Positions in front of plane 
 //   document.body.appendChild(ammo);
+// }
 
+//function ammoAxis() {
+//   x = document.querySelectorAll("#player"); 
+//     console.log(player);
 // }
 
 
