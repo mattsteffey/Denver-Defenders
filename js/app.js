@@ -2,7 +2,7 @@ window.onload = createPlayer;
 var sprite = localStorage.getItem('charid');
 
 //Meteor Movement
-setInterval(makeFall, 35);
+setInterval(makeFall, 50);
 function makeFall() {
   var x = document.querySelectorAll(".meteor"); 
   var i;
@@ -16,24 +16,32 @@ function makeFall() {
 
 
 // This creates the meteors, and places them on a randomly along the x-axis
-setInterval(makeMeteor, 500);
-setInterval(makeMeteor, 500);
+setInterval(makeMeteor, 1000);
+setInterval(makeMeteor, 1000);
 
 function makeMeteor() {
+  var meteorId = Math.random().toString(36).substr(2, 9);  //Generates a random Meteor ID
   var meteor = document.createElement("img");              //Makes an IMG Tag
   meteor.setAttribute("src", "./gameimages/meteor.gif");   //Makes that IMG a Meteor 
-  var x = Math.floor(Math.random() * 10) * 7 + 3 ;            //1-100 for x-axis   
+  var x = Math.floor(Math.random() * 10) * 7 + 3 ;         //1-100 for x-axis   
   meteor.setAttribute("class", "meteor");                  //Classes the Meteor
-  meteor.setAttribute("id", Math.random);
-  meteor.style.marginLeft = 10 + x +"%";                        //Applies a x-axis 1-100
-  meteor.style.marginTop = 0 +"%"; 
+  meteor.setAttribute("id", meteorId);                     //Applies Random ID
+  meteor.style.marginLeft = 10 + x +"%";                   //Applies to x-axis
+  meteor.style.marginTop = 0 +"%";
+  meteor.addEventListener("click", killMeteor);            //Excecutes function on click
   document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
 
+function killMeteor() {
+  x = this.getAttribute('id');
+  document.getElementById(x).remove();
+} 
+ 
 
-function removeDiv(divId) {
-   $("#"+divId).remove();
-}
+
+
+
+  
 
 
 
