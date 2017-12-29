@@ -1,6 +1,6 @@
 # Denver Defenders:
 ### A Game By Matt Steffey
-
+Play Link: https://mattsteffey.github.io/Denver-Defenders/titlescreen.html
 
 ##### Landing Page
 On this page the player will be able to navigate to the instructions page, the credits page, or to the character select screen to play the game itself.
