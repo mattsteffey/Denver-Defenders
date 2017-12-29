@@ -8,17 +8,11 @@ function makeFall() {
   var i;
     for (i = 0; i < x.length; i++) {
       x[i].style.marginTop = parseInt(x[i].style.marginTop) + 1 + "%"; }
-    
 }
 
-//Ammo Movement
-setInterval(ammoMove, 10);
-function ammoMove() {
-  var x = document.querySelectorAll(".ammo");
-  var i;
-    for (i = 0; i < x.length; i++) {
-      x[i].style.marginLeft = parseInt(x[i].style.marginLeft) + 1 + "%"; }
-}
+
+
+
 
 
 // This creates the meteors, and places them on a randomly along the x-axis
@@ -115,5 +109,13 @@ $('html, body').css({
    
 // });
 
+//Ammo Movement
+// setInterval(ammoMove, 10);
+// function ammoMove() {
+//   var x = document.querySelectorAll(".ammo");
+//   var i;
+//     for (i = 0; i < x.length; i++) {
+//       x[i].style.marginLeft = parseInt(x[i].style.marginLeft) + 1 + "%"; }
+// }
 
 
