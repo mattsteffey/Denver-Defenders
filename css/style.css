@@ -15,7 +15,7 @@ body {
 
 #timer {
   position: absolute;
-  margin-left: 20%;
+  margin-left: 27.5%;
   height: 6%;
   z-index: 100;
   width: 20%;
@@ -30,7 +30,7 @@ body {
 
 #score {
   position: absolute;
-  margin-left: 60%;
+  margin-left: 52.5%;
   height: 6%;
   z-index: 100;
   width: 20%;
