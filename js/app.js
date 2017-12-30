@@ -47,9 +47,8 @@ setInterval(timerCount, 1000);
 function timerCount() {
   if (timer > 0) {
     timer -= 1;
-    console.log(timer);
-   }
-
+  }
+ document.getElementById("timer").innerHTML = "TIME: " + timer;
 }
 
 
@@ -87,9 +86,9 @@ function killMeteor() {
   x = this.getAttribute('id');
   document.getElementById(x).remove();
   score += 10;
-  document.getElementById("timer").innerHTML = "TIME: " + timer;
 } 
- 
+
+
 function addPoints() {
   document.getElementById("score").innerHTML = "SCORE: " + score;
 }
