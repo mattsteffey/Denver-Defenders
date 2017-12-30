@@ -1,7 +1,34 @@
-window.onload = createPlayer;
-// window.onload = createTimer;
+window.onload = loadFunction;
+
+//Global Variable for Selcted Character, Score, and Timer....
 var sprite = localStorage.getItem('charid');
 var score = 0;
+var timer = 10;
+
+
+///////////////////MASTER WINDOW LOAD FUNCTION//////////////////////////////////////
+
+//  THIS CREATES THE PLAYER, TIMER BOX, AND SCORE BOX WHEN THE WINDOW LOADS
+function loadFunction() {
+  //Timer Box
+  var timerBox = document.createElement("div");  //creates a div
+  timerBox.setAttribute("id", "timer");         //sets class to timer
+  document.body.appendChild(timerBox);          //adds div to body      
+  
+  //Player Sprite
+  var player = document.createElement("img"); 
+  player.setAttribute("src", sprite);
+  player.setAttribute("id", "player");
+  player.style.position = "absolute";
+  player.style.width = 15+"%";
+  player.style.marginTop = 20 +"%"; 
+  document.body.appendChild(player);          
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
 //Meteor Movement
 setInterval(makeFall, 50);
 function makeFall() {
@@ -12,21 +39,16 @@ function makeFall() {
 }
 
 //timer countdown
-var timer = 10;
 setInterval(timerCount, 1000);
 function timerCount() {
   if (timer > 0) {
     timer -= 1;
     console.log(timer);
+    document.getElementById("timer").innerHTML = "TIME: " + timer;
    }
+
 }
 
-//Creates the Timer Box
-function createTimer() {
-  var timerBox = document.createElement("div");  //creates a div
-  timerBox.setAttribute("class", timer);         //sets class to timer
-  document.body.appendChild(timerBox);          //adds div to body      
-}
 
 
 
@@ -63,16 +85,6 @@ function killMeteor() {
  
 
 
-//Adds player token into the game
-function createPlayer() {
-  var player = document.createElement("img"); 
-  player.setAttribute("src", sprite);
-  player.setAttribute("id", "player");
-  player.style.position = "absolute";
-  player.style.width = 15+"%";
-  player.style.marginTop = 20 +"%"; 
-  document.body.appendChild(player);          
-}
 
 
 //Sroll Lock
