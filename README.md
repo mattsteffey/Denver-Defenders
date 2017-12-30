@@ -4,6 +4,8 @@ Play Link: https://mattsteffey.github.io/Denver-Defenders/titlescreen.html
 
 Trello Board: https://trello.com/b/01jkImql/project-1-denver-defender
 
+
+
 #### Landing Page
 On this page the player will be able to navigate to the instructions page, the credits page, or to the character select screen to play the game itself.
 ![alt text](https://github.com/mattsteffey/Project1/blob/master/README%20images/LandingPage.png)
