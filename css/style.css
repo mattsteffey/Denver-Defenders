@@ -15,7 +15,7 @@ body {
 
 #timer {
   position: absolute;
-  margin-left: 40%;
+  margin-left: 20%;
   height: 6%;
   z-index: 100;
   width: 20%;
@@ -25,6 +25,21 @@ body {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   font-size: 200%;
+  padding-top: 1%;
+}
+
+#score {
+  position: absolute;
+  margin-left: 60%;
+  height: 6%;
+  z-index: 100;
+  width: 20%;
+  background-color: black;
+  border: 5px solid white;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: 150%;
   padding-top: 1%;
 }
 

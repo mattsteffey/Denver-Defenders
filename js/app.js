@@ -13,7 +13,11 @@ function loadFunction() {
   //Timer Box
   var timerBox = document.createElement("div");  //creates a div
   timerBox.setAttribute("id", "timer");         //sets class to timer
-  document.body.appendChild(timerBox);          //adds div to body      
+  document.body.appendChild(timerBox);          //adds div to body   
+
+  var scoreBox = document.createElement("div");  //creates a div
+  scoreBox.setAttribute("id", "score");         //sets class to timer
+  document.body.appendChild(scoreBox);          //adds div to body     
   
   //Player Sprite
   var player = document.createElement("img"); 
@@ -44,10 +48,18 @@ function timerCount() {
   if (timer > 0) {
     timer -= 1;
     console.log(timer);
-    document.getElementById("timer").innerHTML = "TIME: " + timer;
+    document.getElementById("score").innerHTML = "SCORE: " + score;
    }
 
 }
+
+//score tracker
+setInterval(scoreCount, 10);
+function scoreCount() {
+    document.getElementById("timer").innerHTML = "TIME: " + timer;
+   }
+
+
 
 
 
