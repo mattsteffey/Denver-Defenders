@@ -10,6 +10,7 @@ var timer = 99;
 
 //  THIS CREATES THE PLAYER, TIMER BOX, AND SCORE BOX WHEN THE WINDOW LOADS
 function loadFunction() {
+  
   //Timer Box
   var timerBox = document.createElement("div");  //creates a div
   timerBox.setAttribute("id", "timer");         //sets class to timer
@@ -20,7 +21,6 @@ function loadFunction() {
   scoreBox.setAttribute("id", "score");         //sets class to timer
   document.body.appendChild(scoreBox);          //adds div to body    
   document.getElementById("score").innerHTML = "SCORE: " + score; 
-  
   //Player Sprite
   var player = document.createElement("img"); 
   player.setAttribute("src", sprite);
