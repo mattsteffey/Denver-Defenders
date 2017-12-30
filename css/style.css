@@ -16,12 +16,16 @@ body {
 #timer {
   position: absolute;
   margin-left: 40%;
-  height: 10%;
+  height: 6%;
   z-index: 100;
   width: 20%;
   background-color: black;
   border: 5px solid white;
   color: white;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 1%;
 }
 
 .gradient {
