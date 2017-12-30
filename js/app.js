@@ -48,16 +48,9 @@ function timerCount() {
   if (timer > 0) {
     timer -= 1;
     console.log(timer);
-    document.getElementById("score").innerHTML = "SCORE: " + score;
    }
 
 }
-
-//score tracker
-setInterval(scoreCount, 10);
-function scoreCount() {
-    document.getElementById("timer").innerHTML = "TIME: " + timer;
-   }
 
 
 
@@ -84,6 +77,7 @@ function makeMeteor() {
   meteor.style.marginLeft = 10 + x +"%";                   //Applies to x-axis
   meteor.style.marginTop = 0 +"%";
   meteor.addEventListener("click", killMeteor);            //Excecutes function on click
+  meteor.addEventListener("click", addPoints);
   document.body.appendChild(meteor);                       //Places the Meteor into the game
 }
 
@@ -93,9 +87,12 @@ function killMeteor() {
   x = this.getAttribute('id');
   document.getElementById(x).remove();
   score += 10;
+  document.getElementById("timer").innerHTML = "TIME: " + timer;
 } 
  
-
+function addPoints() {
+  document.getElementById("score").innerHTML = "SCORE: " + score;
+}
 
 
 
