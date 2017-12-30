@@ -34,7 +34,7 @@ function loadFunction() {
 
 
 //Meteor Movement
-setInterval(makeFall, 50);
+setInterval(makeFall, 40);
 function makeFall() {
   var x = document.querySelectorAll(".meteor"); 
   var i;
@@ -63,8 +63,8 @@ function timerCount() {
 
 
 // This creates the meteors, and places them on a randomly along the x-axis
-setInterval(makeMeteor, 1000);
-setInterval(makeMeteor, 1000);
+setInterval(makeMeteor, 300);
+
 
 function makeMeteor() {
   var meteorId = Math.random().toString(36).substr(2, 9);  //Generates a random Meteor ID
