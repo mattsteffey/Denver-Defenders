@@ -105,23 +105,44 @@ h1{
 
 #jones:hover {
 	border: solid #853cf2 6px;
+	-webkit-box-shadow: inset 0 0 100px #853cf2;
+    -moz-box-shadow: inset 0 0 100px #853cf2;
+    box-shadow: inset 0 0 100px #853cf2;
 }
 #beth:hover {
 	border: solid #f268ff 6px;
+	-webkit-box-shadow: inset 0 0 100px #f268ff;
+    -moz-box-shadow: inset 0 0 100px #f268ff;
+    box-shadow: inset 0 0 100px #f268ff;
 } 
 #bud:hover  {
 	border: solid #68ff77 6px;
+	-webkit-box-shadow: inset 0 0 100px #68ff77;
+    -moz-box-shadow: inset 0 0 100px #68ff77;
+    box-shadow: inset 0 0 100px #68ff77;
 }	
 #kid:hover  {
 	border: solid #ff0000 6px;
+	-webkit-box-shadow: inset 0 0 100px #ff0000;
+    -moz-box-shadow: inset 0 0 100px #ff0000;
+    box-shadow: inset 0 0 100px #ff0000;
 }
 #keg:hover  {
 	border: solid #a0a0a0 6px;
+	-webkit-box-shadow: inset 0 0 100px #a0a0a0;
+    -moz-box-shadow: inset 0 0 100px #a0a0a0;
+    box-shadow: inset 0 0 100px #a0a0a0;
 }
 #scotty:hover {
 	border: solid #ffb200 6px;
+	-webkit-box-shadow: inset 0 0 100px #ffb200;
+    -moz-box-shadow: inset 0 0 100px #ffb200;
+    box-shadow: inset 0 0 100px #ffb200;
 }
 #sir:hover  {
 	border: solid #fff200 6px;
+	-webkit-box-shadow: inset 0 0 100px #fff200;
+    -moz-box-shadow: inset 0 0 100px #fff200;
+    box-shadow: inset 0 0 100px #fff200;
 }
 
