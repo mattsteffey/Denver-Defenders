@@ -26,3 +26,10 @@ document.getElementById("sir").addEventListener("click", function() {
     localStorage.setItem("charid", "./gameimages/CharacterSprites/plane-sirlawrencepose.gif");
 });
 
+
+document.getElementById("beth").onmouseover = function(){
+ document.getElementById("charName").innerHTML = "BETH BROADWAY";
+};
+
+
+

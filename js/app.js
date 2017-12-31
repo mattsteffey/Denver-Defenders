@@ -54,6 +54,10 @@ function timerCount() {
 }
 
 
+document.getElementById("beth").onmouseover = function(){
+  console.log("BETH HOVER");
+  // document.getElementById("charName").innerHTML = "BETH BROADWAY";
+};
 
 
 
