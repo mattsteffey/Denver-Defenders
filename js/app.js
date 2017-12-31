@@ -86,7 +86,10 @@ function makeMeteor() {
 //Click function to kill meteors and add to score
 function killMeteor() {
   x = this.getAttribute('id');
-  document.getElementById(x).remove();
+  document.getElementById(x).setAttribute("src", "./gameimages/ten.png");
+  document.getElementById(x).style.width = 5+"%";
+  document.getElementById(x).style.paddingLeft += 5+"%";
+  document.getElementById(x).style.paddingTop += 5+"%";
   score += 10;
 } 
 

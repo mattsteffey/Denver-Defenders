@@ -41,6 +41,7 @@ body {
   text-align: center;
   font-size: 150%;
   padding-top: 1%;
+
 }
 
 .gradient {
@@ -170,6 +171,11 @@ body {
 
 
 
+.ten {
+  width: 10%;
+  position: absolute;
+  z-index: 7;
+}
 
 .meteor {
   width: 15%;
