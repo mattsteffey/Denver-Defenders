@@ -95,6 +95,21 @@ function addPoints() {
   document.getElementById("score").innerHTML = "SCORE: " + score;
 }
 
+//Win or Loss Modal based on score when timer hits 0
+function modal() {
+  if (timer == 0) {
+    setInterval(makeFall, 0);
+
+  }
+
+  if (timer == 0 && score > 300) {
+    //LOAD WIN MODAL
+  }
+
+  if (timer == 0 && score < 300 ) {
+    //LOAD LOSS MODAL
+  }
+}
 
 
 //Sroll Lock
