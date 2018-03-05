@@ -36,7 +36,7 @@ function loadFunction() {
 
 
 //Meteor Movement
-setInterval(makeFall, 40);
+let dropper = setInterval(makeFall, 40);
 function makeFall() {
   var x = document.querySelectorAll(".meteor"); 
   var i;
@@ -98,7 +98,7 @@ function addPoints() {
 //Win or Loss Modal based on score when timer hits 0
 function modal() {
   if (timer == 0) {
-    setInterval(makeFall, 0);
+    dropper = setInterval(makeFall, 0);
 
   }
 
