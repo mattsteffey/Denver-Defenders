@@ -3,7 +3,7 @@ window.onload = loadFunction;
 //Global Variable for Selcted Character, Score, and Timer....
 var sprite = localStorage.getItem('charid');
 var score = 0;
-var timer = 300;
+var timer = 30;
 
 
 ///////////////////MASTER WINDOW LOAD FUNCTION//////////////////////////////////////
