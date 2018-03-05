@@ -3,7 +3,7 @@ window.onload = loadFunction;
 //Global Variable for Selcted Character, Score, and Timer....
 var sprite = localStorage.getItem('charid');
 var score = 0;
-var timer = 30;
+var timer = 300;
 
 
 ///////////////////MASTER WINDOW LOAD FUNCTION//////////////////////////////////////
@@ -42,16 +42,30 @@ function makeFall() {
   var i;
     for (i = 0; i < x.length; i++) {
       x[i].style.marginTop = parseInt(x[i].style.marginTop) + 1 + "%"; }
+   if (timer == 0) {
+        clearInterval(dropper);
+    
+      }
 }
 
-//timer countdown
+//timer countdown and win/loss screen
 setInterval(timerCount, 1000);
 function timerCount() {
   if (timer > 0) {
     timer -= 1;
   }
  document.getElementById("timer").innerHTML = "TIME: " + timer;
+ if (timer == 0) {
+    document.getElementById("dimmer").style.zIndex = "900"; 
+  }
+ if (timer == 0 && score < 350) {
+  document.getElementById("gameOver").style.zIndex = "1000";
+  }       
+  if (timer == 0 && score > 350) {
+    document.getElementById("gameWin").style.zIndex = "1000";
+    }       
 }
+
 
 
 
@@ -62,7 +76,7 @@ function timerCount() {
 
 
 // This creates the meteors, and places them on a randomly along the x-axis
-setInterval(makeMeteor, 300);
+let spawner = setInterval(makeMeteor, 300);
 
 
 function makeMeteor() {
@@ -77,6 +91,8 @@ function makeMeteor() {
   meteor.addEventListener("click", killMeteor);            //Excecutes function on click
   meteor.addEventListener("click", addPoints);
   document.body.appendChild(meteor);                       //Places the Meteor into the game
+  if (timer == 0) {
+        clearInterval(spawner);
 }
 
 
@@ -95,21 +111,7 @@ function addPoints() {
   document.getElementById("score").innerHTML = "SCORE: " + score;
 }
 
-//Win or Loss Modal based on score when timer hits 0
-function modal() {
-  if (timer == 0) {
-    dropper = setInterval(makeFall, 0);
 
-  }
-
-  if (timer == 0 && score > 300) {
-    //LOAD WIN MODAL
-  }
-
-  if (timer == 0 && score < 300 ) {
-    //LOAD LOSS MODAL
-  }
-}
 
 
 //Sroll Lock
@@ -181,5 +183,4 @@ $('html, body').css({
 //     for (i = 0; i < x.length; i++) {
 //       x[i].style.marginLeft = parseInt(x[i].style.marginLeft) + 1 + "%"; }
 // }
-
-
+}
