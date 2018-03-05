@@ -42,7 +42,7 @@ h1{
 
 .characterContain {
 	width: 80%;
-	height: 500px;
+	height: 400px;
 	border: solid white 8px;
 	margin-bottom:1%;
 	margin-left: 10%;
@@ -52,7 +52,6 @@ h1{
 #charName {
 	width: 40%;
 	height: 70px;
-	margin-bottom:1%;
 	margin-left: 30%;
 	margin-top: 17%;
 	display: inline-block;
@@ -62,23 +61,23 @@ h1{
 	font-size: 200%;
 }
 
-.characterBio {
+#characterBio {
 	width: 60%;
 	height: 200px;
-	
-	margin-bottom:1%;
 	margin-left: 20%;
 	display: inline-block;
 	font-family: 'Press Start 2P', cursive;
 	color: white;
 	font-size: 120%;
+	text-align: center;
 	
 
 }
 
 #jones{
 	border: solid white 6px;
-	margin-left: 12.5%;
+	margin-left: 10%;
+	margin-top: 0%;
 }
 #beth{
 	border: solid white 6px;
